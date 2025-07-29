@@ -27,37 +27,25 @@
 ### I didn't include contact form that has inout fields because the website don't have server side programming, that is why I use contact info
 ### like whatsapp and the likes for user friendly. 
 
-Technologies Used
-HTML5
+## Technologies Used
+### HTML5
+### CSS3
+### Vercel (for deployment)
 
-CSS3
+## Project Structure
+### index.html - Main website content
+### assets/ - Contains all static files
+### css/ - Stylesheets
+### images/ - Project screenshots and background image for hero section
+### icons/ - Various icons used
+### files/ - Downloadable documents (CV)
 
-JavaScript (for interactivity)
+## How to Run Locally
+### Clone the repository
+### Open index.html in a web browser
 
-Vercel (for deployment)
-
-Project Structure
-index.html - Main website content
-
-assets/ - Contains all static files
-
-css/ - Stylesheets
-
-images/ - Project screenshots and background image for hero section
-
-icons/ - Various icons used
-
-files/ - Downloadable documents (CV)
-
-How to Run Locally
-Clone the repository
-
-Open index.html in a web browser
-
-Contact
-For inquiries, contact James Riak at:
-
-Email: riakjms@gmail.com
-
-Phone: +254 757 876 862
+## Contact
+### For inquiries, contact James Riak at:
+### Email: riakjms@gmail.com
+### Phone: +254 757 876 862
 
