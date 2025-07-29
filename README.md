@@ -69,14 +69,15 @@ Images: Optimized project screenshots
 File Structure
 text
 assets/
-├── css/
-│   └── styles.css           # Main stylesheet
-├── icons/                   # All PNG icons
-├── images/                  # Project screenshots
-├── favicon_io/              # Favicon files
-└── files/
-    └── James Riak CV.docx   # Downloadable CV
+    css/
+        styles.css           # Main stylesheet
+    icons/                   # All PNG icons
+    images/                  # Project screenshots
+    favicon_io/              # Favicon files
+    files/
+        James Riak CV.docx   # Downloadable CV
 index.html                   # Main HTML file
+
 Sections Breakdown
 1. Header & Navigation
 Fixed position header with logo and navigation
@@ -193,6 +194,7 @@ Clone the repository:
 
 bash
 git clone https://github.com/RiakJam/personal-portfolio-website-hackathon1.git
+
 Open the project folder:
 
 bash
