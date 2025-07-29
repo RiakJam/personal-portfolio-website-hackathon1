@@ -37,7 +37,7 @@ assets/ - Contains all static files
 
 css/ - Stylesheets
 
-images/ - Project screenshots
+images/ - Project screenshots and background image for hero section
 
 icons/ - Various icons used
 
