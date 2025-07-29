@@ -182,3 +182,4 @@ Modify availability information
 
 License
 This project is open-source and available under the MIT License. You're free to use it as a template for your own portfolio.
+
