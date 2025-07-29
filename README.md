@@ -7,7 +7,7 @@
 ## Deployment
 ### The website is deployed on Vercel and accessible via this link:
 ### https://personal-portfolio-website-hackatho.vercel.app/
-🚀 **Live Demo:** [View Portfolio](https://personal-portfolio-website-hackatho.vercel.app/)
+### 🚀 **Live Demo:** [View Portfolio ↗](https://personal-portfolio-website-hackatho.vercel.app/){:target="_blank"}
 ## Features
 ### Responsive design for all devices
 
