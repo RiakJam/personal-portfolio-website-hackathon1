@@ -1,150 +1,76 @@
-# personal-portfolio-website-hackathon1
-Portfolio Website Documentation
-Overview
-This is a professional portfolio website for James Riak Samuel Yacobo, showcasing his skills, projects, education, and services as a full-stack web developer. The website features a modern, responsive design with smooth animations and interactive elements.
-
+James Riak's Portfolio Website - Documentation
 Table of Contents
-    1. Features
-    2. Technologies Used
-    3. File Structure
-    4. Sections Breakdown
-    5. Responsive Design
-    6. Performance Optimization
-    7. Accessibility
-    8. Installation
-    9. Customization
-    10. License
+Overview
 
 Features
-Core Features
-    • Responsive Design: Works on all device sizes from mobile to desktop
-    • Modern UI: Clean, professional interface with smooth animations
-    • Interactive Elements: Animated skill bars, hover effects, and smooth scrolling
-    • Performance Optimized: Fast loading times with optimized assets
-    • Accessibility: Semantic HTML and ARIA labels for screen readers
-Special Features
-Technologies Used
-Frontend
-    • HTML5: Semantic markup
-    • CSS3: Custom styling with variables and animations
-    • JavaScript: Interactive elements and animations
-    • CSS Variables: For consistent theming
-Assets
-    • Icons: Custom PNG icons from Icons8
-    • Fonts: System UI stack for optimal performance
-    • Images: Optimized project screenshots
-
-File Structure
-<<<<<<< HEAD
-Root folder (portfolio)
-    • Index.html
-    • assets(folder)
-    • README.md
-	Assets 
-        ◦ Icons folder: Custom PNG icons, all the icons are on this folder
-        ◦ css folder: This is where the styles.css is saved
-        ◦ Images folder: This contains the images of the website (Projects and Background for Hero section)
-=======
-
-assets/
-    css/
-        styles.css           # Main stylesheet
-    icons/                   # All PNG icons
-    images/                  # Project screenshots
-    favicon_io/              # Favicon files
-    files/
-        James Riak CV.docx   # Downloadable CV
-index.html                   # Main HTML file
-
-Sections Breakdown
-1. Header & Navigation
-Fixed position header with logo and navigation
->>>>>>> 9956a7be344576ef38b3c1d603ce9a60f7d79cb0
 
 Sections Breakdown
 
-1. Header & Navigation
+Technical Details
 
-Fixed position header with logo and navigation
-Mobile-responsive hamburger menu
+Installation
 
-Smooth scrolling to sections
+Usage
 
-2. Hero Section
-
-Introduction with call-to-action button
-Clean, focused design
-
-3. About Section
-
-Personal introduction
-Skill bars showing proficiency levels
-Responsive two-column layout
-
-4. Education Section
-
-Timeline of educational background
-Institution details and study periods
-Downloadable CV button
-
-5. Interests Section
-Card-based layout of professional interests
-Icons for visual representation
-Hover animations
-
-6. Services Section
-
-Service offerings with icons
-Clear descriptions of capabilities
-Consistent card design
-
-7. Projects Section
-
-Featured projects with images
-Technology stack for each project
-Links to live websites
-
-8. Contact Section
-
-Multiple contact methods (email, phone, location)
-Social media links with icons
-Availability information
-
-9. Footer
-
-Quick links to all sections
-Repeat of contact information
-Social media links
-Copyright information
+Customization
 
 Responsive Design
-The website uses a mobile-first approach with breakpoints at:
-992px (tablet landscape)
-768px (tablet portrait)
-576px (mobile)
 
-Key responsive features:
+Browser Support
 
-Flexible grids and images
-Stacked sections on mobile
-Adjusted font sizes
-Hamburger menu for mobile navigation
-Performance Optimization
+License
 
-Techniques used:
+Credits
 
-Optimized PNG icons
-Lazy loading for images
-Minimal external dependencies
-Efficient CSS with minimal redundancy
-Properly sized images
-Accessibility
-Accessibility features include:
-Semantic HTML5 elements
-ARIA labels for interactive elements
-Proper contrast ratios
-Keyboard navigable
-Descriptive alt text for images
+Overview
+This is a professional portfolio website for James Riak Samuel Yacobo, showcasing his skills, projects, education, and services as a web developer. The website features a modern, responsive design with smooth animations and interactive elements.
+
+Features
+Responsive Design: Works on all device sizes
+
+Modern UI: Clean, professional aesthetic with smooth animations
+
+Interactive Elements: Animated skill bars, project cards, and contact form
+
+SEO Optimized: Semantic HTML and proper meta tags
+
+Accessibility: Keyboard navigable and screen-reader friendly
+
+Performance: Optimized loading with page loader
+
+Cross-browser Compatibility: Works on all modern browsers
+
+Sections Breakdown
+Header: Navigation menu with logo and mobile toggle
+
+Hero Section: Introduction with call-to-action button
+
+About Section: Personal introduction and skill progress bars
+
+Education Section: Academic background and qualifications
+
+Interests Section: Cards showcasing professional interests
+
+Services Section: Offered services with icons
+
+Projects Section: Portfolio projects with links
+
+Contact Section: Multiple contact methods and social links
+
+Footer: Additional navigation and copyright information
+
+Technical Details
+HTML5: Semantic markup
+
+CSS3: Custom styling with animations
+
+JavaScript: Interactive functionality
+
+Responsive Breakpoints: Mobile (≤768px), Tablet (769px-1024px), Desktop (≥1025px)
+
+Icons: Icons8 icons (attributed in credits)
+
+Favicons: Custom favicon set for all devices
 
 Installation
 To run this website locally:
@@ -152,47 +78,95 @@ To run this website locally:
 Clone the repository:
 
 bash
-git clone https://github.com/RiakJam/personal-portfolio-website-hackathon1.git
-
-Open the project folder:
+git clone https://github.com/RiakJam/portfolio-website.git
+Navigate to the project directory:
 
 bash
-cd portfolio
+cd portfolio-website
 Open index.html in your browser
 
-No server or dependencies required - it's pure HTML/CSS/JS.
+Usage
+The website is ready to use with all functionality working out of the box. Key interactions include:
+
+Click navigation links to scroll to sections
+
+Mobile menu toggle (appears on screens ≤768px)
+
+Back-to-top button appears when scrolling down
+
+Project links open in new tabs
+
+Contact methods are clickable (email, phone, social media)
 
 Customization
 To personalize this portfolio:
 
 Content:
 
-Update text in HTML files
+Update text content in the HTML file
 
-Replace images in assets/images/
+Replace images in assets/images/ with your own
 
-Add/remove project entries
+Update the CV file in assets/files/
 
 Styling:
 
-Modify colors in :root variables
+Modify colors in CSS variables
 
-Adjust spacing in CSS
+Adjust animations in styles.css
 
-Change animation durations
+Change layout in the media queries
 
-Icons:
+Functionality:
 
-Replace PNGs in assets/icons/
+Add/remove sections as needed
 
-Update references in HTML
+Modify JavaScript for additional features
 
-Contact Info:
+Update contact information
 
-Update email, phone, and social links
+Responsive Design
+The website adapts to different screen sizes with:
 
-Modify availability information
+Flexible grid layouts
+
+Responsive typography
+
+Adaptive navigation (mobile menu)
+
+Optimized image display
+
+Touch-friendly interactive elements
+
+Breakpoints:
+
+Mobile: ≤768px
+
+Tablet: 769px-1024px
+
+Desktop: ≥1025px
+
+Browser Support
+The website has been tested and works on:
+
+Chrome (latest)
+
+Firefox (latest)
+
+Safari (latest)
+
+Edge (latest)
+
+Mobile Safari (iOS)
+
+Chrome for Android
 
 License
-This project is open-source and available under the MIT License. You're free to use it as a template for your own portfolio.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
+Credits
+Icons: Icons8
+
+Inspiration: Various portfolio templates and designs
+
+Developer: James Riak Samuel Yacobo
