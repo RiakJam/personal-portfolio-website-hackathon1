@@ -43,7 +43,7 @@ Back-to-Top Button: Easy navigation for long pages
 
 Mobile-Friendly Navigation: Hamburger menu for smaller screens
 
-Contact Form: Multiple contact methods including social media links
+Contact Form: Multiple contact methods, including social media links
 
 Project Showcase: Highlighted projects with links to live sites
 
@@ -67,7 +67,7 @@ Fonts: System UI stack for optimal performance
 Images: Optimized project screenshots
 
 File Structure
-text
+
 assets/
     css/
         styles.css           # Main stylesheet
