@@ -1,10 +1,13 @@
 James Riak's Portfolio Website Documentation
+
 Overview
+
 This is a responsive portfolio website showcasing James Riak Samuel Yacobo's skills, projects, and professional information.
 
 Deployment
 The website is deployed on Vercel and accessible via this link:
-Live Demo
+
+https://personal-portfolio-website-hackathon1-6vddsleva.vercel.app/
 
 Features
 Responsive design for all devices
