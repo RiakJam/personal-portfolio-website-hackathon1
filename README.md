@@ -23,11 +23,6 @@ Core Features
     • Performance Optimized: Fast loading times with optimized assets
     • Accessibility: Semantic HTML and ARIA labels for screen readers
 Special Features
-    • Page Loader: Elegant loading animation
-    • Back-to-Top Button: Easy navigation for long pages
-    • Mobile-Friendly Navigation: Hamburger menu for smaller screens
-    • Contact Form: Multiple contact methods including social media links
-    • Project Showcase: Highlighted projects with links to live sites
 Technologies Used
 Frontend
     • HTML5: Semantic markup
@@ -40,6 +35,7 @@ Assets
     • Images: Optimized project screenshots
 
 File Structure
+<<<<<<< HEAD
 Root folder (portfolio)
     • Index.html
     • assets(folder)
@@ -48,6 +44,22 @@ Root folder (portfolio)
         ◦ Icons folder: Custom PNG icons, all the icons are on this folder
         ◦ css folder: This is where the styles.css is saved
         ◦ Images folder: This contains the images of the website (Projects and Background for Hero section)
+=======
+
+assets/
+    css/
+        styles.css           # Main stylesheet
+    icons/                   # All PNG icons
+    images/                  # Project screenshots
+    favicon_io/              # Favicon files
+    files/
+        James Riak CV.docx   # Downloadable CV
+index.html                   # Main HTML file
+
+Sections Breakdown
+1. Header & Navigation
+Fixed position header with logo and navigation
+>>>>>>> 9956a7be344576ef38b3c1d603ce9a60f7d79cb0
 
 Sections Breakdown
 
@@ -141,6 +153,7 @@ Clone the repository:
 
 bash
 git clone https://github.com/RiakJam/personal-portfolio-website-hackathon1.git
+
 Open the project folder:
 
 bash
