@@ -1,32 +1,31 @@
-#James Riak's Portfolio Website Documentation
+# James Riak's Portfolio Website Documentation
 
-Overview
+## Overview
 
-This is a responsive portfolio website showcasing James Riak Samuel Yacobo's skills, projects, and professional information.
+### This is a responsive portfolio website showcasing James Riak Samuel Yacobo's skills, projects, and professional information.
 
-Deployment
-The website is deployed on Vercel and accessible via this link:
+## Deployment
+### The website is deployed on Vercel and accessible via this link:
+### https://personal-portfolio-website-hackatho.vercel.app/
 
-https://personal-portfolio-website-hackatho.vercel.app/
+## Features
+### Responsive design for all devices
 
-Features
-Responsive design for all devices
+### Interactive sections (About, Education, Projects, etc.)
 
-Interactive sections (About, Education, Projects, etc.)
+## Skill progress bars
 
-Skill progress bars
+### Project showcase with live links
 
-Project showcase with live links
+### Contact form and social media links
 
-Contact form and social media links
+### Smooth scrolling navigation
 
-Smooth scrolling navigation
+### Loading animation
 
-Loading animation
-
-CONTACT FORM
-I didn't include contact form that has inout fields because the website don't have server side programming, that is why I use contact info
-like whatsapp and the likes for user friendly. 
+## CONTACT FORM
+### I didn't include contact form that has inout fields because the website don't have server side programming, that is why I use contact info
+### like whatsapp and the likes for user friendly. 
 
 Technologies Used
 HTML5
