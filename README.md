@@ -7,7 +7,7 @@ This is a responsive portfolio website showcasing James Riak Samuel Yacobo's ski
 Deployment
 The website is deployed on Vercel and accessible via this link:
 
-https://personal-portfolio-website-hackathon1-6vddsleva.vercel.app/
+https://personal-portfolio-website-hackatho.vercel.app/
 
 Features
 Responsive design for all devices
