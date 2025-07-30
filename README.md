@@ -14,6 +14,26 @@ This is a professional portfolio website showcasing James Riak Samuel Yacobo's s
 - Contact form and multiple contact options
 - Loading animation
 
+### Single-Page Design with Hash (#) Navigation Explanation
+- Reason: The website uses a single-page design with hash (#) navigation primarily for seamless user experience and faster content access.
+
+#### Key Benefits:
+##### Instant Section Loading
+- Hash links (e.g., #projects) allow users to jump between sections without full page reloads
+- Eliminates white flashes between page transitions
+
+##### Preserved Scroll Position
+- Users can bookmark specific sections (e.g., yourdomain.com#contact)
+- Browser back/forward buttons work intuitively between sections
+
+##### Performance Optimization
+- Only one HTTP request needed for all content
+- No waiting for multiple pages to load when navigating
+
+##### Portfolio-Specific Advantages
+- Creates a "storytelling" flow as users scroll through professional journey
+- Visual consistency across all sections reinforces personal brand
+
 ### Technologies Used
 - HTML5 (semantic markup)
 - CSS3 (flexbox, grid, animations)
