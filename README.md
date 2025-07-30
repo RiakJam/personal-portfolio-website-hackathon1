@@ -3,8 +3,8 @@
 ### Project Overview
 This is a professional portfolio website showcasing James Riak Samuel Yacobo's skills, projects, and professional background. The single-page application features responsive design with smooth navigation between sections.
 
-### Live Demo
-🚀 [View Portfolio](https://personal-portfolio-website-hackatho.vercel.app/)
+### Live Website
+🚀 [View My Portfolio](https://personal-portfolio-website-hackatho.vercel.app/)
 
 ### Features
 - Fully responsive layout
