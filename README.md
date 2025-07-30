@@ -82,12 +82,11 @@ This is a professional portfolio website showcasing James Riak Samuel Yacobo's s
 
 ### Accessibility Features
 - Semantic HTML5
-- ARIA attributes
+- ARIA (Accessible Rich Internet Applications) attributes
 - Keyboard navigation
 - Proper contrast ratios
 
 ### Performance Optimizations
-- Image compression
 - Minimal dependencies
 - Efficient CSS
 - Loading strategy
