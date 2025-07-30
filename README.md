@@ -10,7 +10,7 @@
 ## Features
 ### Responsive design for all devices
 
-### Interactive sections (About, Education, Projects, etc.)
+### Interactive sections (Home, About, Education, Projects, Interest, Contact and Footer.)
 
 ## Skill progress bars
 
