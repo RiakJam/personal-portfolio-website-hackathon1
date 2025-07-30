@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body>
@@ -24,10 +25,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">RIAK'S <span>Portfolio</span></div>
-            <div class="menu-toggle">
-                <span class="icon">☰</span>
-            </div>
-            <nav>
+            <nav id="menu">
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -38,6 +36,10 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Open Menu Button -->
+            <a href="#menu" class="menu-toggle open">☰</a>
+            <!-- Close Menu Button -->
+            <a href="#" class="menu-toggle close">✕</a>
         </div>
     </header>
     <!-- Hero Section -->
@@ -52,79 +54,80 @@
     </section>
     <!-- About Section -->
     <section id="about">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Get to know me</h3>
-                <img src="assets/images/Portfolioo.jpg" alt="James Riak Samuel Yacobo" class="about-image">
-                <p>Hi! I'm James Riak Samuel Yacobo, a passionate web developer with a love for creating functional
-                    and beautiful web experiences. I am a fullstack developer.</p>
-                <p>My journey in programming started when I was 24 years and since then I've been constantly
-                    learning and improving my skills. I believe in writing clean, efficient code and creating
-                    user-friendly interfaces.</p>
-                <p>When I'm not coding, you can find me watching or playing football, reading history and politics.</p>
-            </div>
-            <div class="skills">
-                <h3>My Skills</h3>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>HTML</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%;"></div>
-                    </div>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Get to know me</h3>
+                    <img src="assets/images/Portfolioo.jpg" alt="James Riak Samuel Yacobo" class="about-image">
+                    <p>Hi! I'm James Riak Samuel Yacobo, a passionate web developer with a love for creating functional
+                        and beautiful web experiences. I am a fullstack developer.</p>
+                    <p>My journey in programming started when I was 24 years and since then I've been constantly
+                        learning and improving my skills. I believe in writing clean, efficient code and creating
+                        user-friendly interfaces.</p>
+                    <p>When I'm not coding, you can find me watching or playing football, reading history and politics.
+                    </p>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>CSS</span>
-                        <span>90%</span>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>JavaScript</span>
-                        <span>85%</span>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%;"></div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PHP</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>PHP</span>
-                        <span>80%</span>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>SQL</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%;"></div>
-                    </div>
-                </div>
-                   <div class="skill-item">
-                    <div class="skill-name">
-                        <span>Dart</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 50%;"></div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Dart</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Education Section -->
     <section id="education">
@@ -357,7 +360,34 @@
                             <img src="assets/icons/icons8-github-50.png" alt="GitHub" class="contact-icon">
                             <div>
                                 <h4>GitHub</h4>
-                                <a href="https://github.com/RiakJam" target="_blank">James Riak</a>
+                                <a href="https://github.com/RiakJam" target="_blank">Check it out</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/icons/icons8-facebook-48.png" alt="Facebook" class="social-icon">
+                            <div>
+                                <h4>Facebook</h4>
+                                <a href="https://facebook.com/riakwande" target="_blank">Follow me on Facebook</a>
+                            </div>
+                        <li>
+                            <img src="assets/icons/icons8-whatsapp-50.png" alt="WhatsApp" class="social-icon">
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/+254757876862" target="_blank">Let's chat</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/icons/icons8-instagram-50.png" alt="Instagram" class="social-icon">
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://www.instagram.com/riak611" target="_blank">Follow me on IG</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/icons/icons8-twitter-50.png" alt="Twitter" class="social-icon">
+                            <div>
+                                <h4>X</h4>
+                                <a href="https://x.com/Riak26163?t=9Fs5VZc4X7mvnO4m1Euh0Q&s=08" target="_blank">Follow me on X</a>
                             </div>
                         </li>
                     </ul>
@@ -365,9 +395,9 @@
                 <div class="contact-availability">
                     <h3>Availability</h3>
                     <p>I'm currently available for freelance work and full-time opportunities. Connect with me through
-                        these platforms:</p>
+                        any platform you feel comfortable to use.</p>
 
-                    <div class="social-contact">
+                    <!-- <div class="social-contact">
                         <a href="https://wa.me/+254757876862" class="social-btn whatsapp" target="_blank">
                             <img src="assets/icons/icons8-whatsapp-50.png" alt="WhatsApp" class="social-icon">
                         </a>
@@ -384,14 +414,114 @@
                             target="_blank">
                             <img src="assets/icons/icons8-twitter-50.png" alt="Twitter" class="social-icon">
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="contact-cta">
                         <p>Prefer to schedule a call or meeting?</p>
                         <p><strong>Book via WhatsApp or Email</strong></p>
                     </div>
+
+                    <form class="contact-form" action="#" method="POST">
+                        <h4>Or send me a message directly:</h4>
+
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+
+                            <div class="form-group half-width">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Your email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="3" required
+                                placeholder="Your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
+
+                <style>
+                    /* Form Styles */
+                    .contact-form {
+                        margin-top: 30px;
+                        max-width: 600px;
+                        /* Match your content width */
+                    }
+
+                    .contact-form h4 {
+                        margin-bottom: 20px;
+                        color: #0a0a0a;
+                        font-size: 1.2rem;
+                    }
+
+                    .form-row {
+                        display: flex;
+                        gap: 15px;
+                        margin-bottom: 20px;
+                    }
+
+                    .form-group {
+                        margin-bottom: 20px;
+                    }
+
+                    .half-width {
+                        flex: 1;
+                    }
+
+                    .form-group label {
+                        display: block;
+                        margin-bottom: 8px;
+                        color: #1d1c1c;
+                        font-weight: 500;
+                    }
+
+                    .form-group input,
+                    .form-group textarea {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #444;
+                        border-radius: 4px;
+                        background: rgba(255, 255, 255, 0.1);
+                        color: #131111;
+                        font-size: 0.9rem;
+                    }
+
+                    .form-group textarea {
+                        resize: vertical;
+                        min-height: 80px;
+                        /* Shorter textarea */
+                    }
+
+                    .submit-btn {
+                        background: var(--primary-color);
+                        color: #fff;
+                        border: none;
+                        padding: 10px 20px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        transition: background 0.3s ease;
+                    }
+
+                    .submit-btn:hover {
+                        background: var(--primary-dark-color);
+                    }
+
+                    ::placeholder {
+                        color: #ccc;
+                        opacity: 1;
+                        font-size: 0.9rem;
+                    }
+                </style>
             </div>
+        </div>
         </div>
     </section>
     <!-- Enhanced Footer -->
@@ -448,94 +578,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p id="footer-text"></p>
+                <p> &copy; 2025 All Rights Reserved. | Designed and developed with ❤️ by James Riak Samuel Yacobo</p>
             </div>
         </div>
     </footer>
-    <!-- Back to Top Button -->
-    <div class="back-to-top">
-        <img src="assets/icons/icons8-up-squared-32.png" alt="Back to top" class="back-to-top-icon">
-    </div>
-
-    <script>
-        // Page Loader
-        window.addEventListener('load', function () {
-            const loader = document.querySelector('.page-loader');
-            // Show loader for minimum 1 second (even if page loads faster)
-            setTimeout(function () {
-                loader.classList.add('hidden');
-                // Remove loader from DOM after fade out completes
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                }, 500); // Match this with the CSS transition time
-            }, 1000); // Minimum show time
-        });
-        // Dynamically insert year 
-        const currentYear = new Date().getFullYear();
-        const yourName = "James Riak Samule Yacobo";
-        document.getElementById("footer-text").innerHTML =
-            `&copy; ${currentYear} ${yourName}. All Rights Reserved. | Designed and developed with ❤️ by ${yourName}`;
-        // Mobile Menu Toggle with Unicode Icons
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
-        const menuIcon = menuToggle.querySelector('.icon');
-
-        // Set initial icon (hamburger)
-        menuIcon.textContent = '☰';
-
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-
-            // Toggle between hamburger and close icons
-            if (nav.classList.contains('active')) {
-                menuIcon.textContent = '✕';
-            } else {
-                menuIcon.textContent = '☰';
-            }
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('nav ul li a').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-                menuIcon.textContent = '☰';
-            });
-        });
-        // Back to Top Button
-        const backToTop = document.querySelector('.back-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
-        });
-
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Smooth scrolling for all links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

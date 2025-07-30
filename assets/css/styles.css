@@ -21,7 +21,7 @@
             background-color: #f9f9f9;
         }
 
-        /* Page Loader Styles */
+        /* CSS for Page Loader */
         .page-loader {
             position: fixed;
             top: 0;
@@ -29,11 +29,20 @@
             width: 100%;
             height: 100%;
             background-color: var(--secondary-color);
+            z-index: 9999;
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
+            animation: fadeOut 1.5s forwards;
+            animation-delay: 1s;
+            /* Minimum show time */
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
         }
 
         .loader-content {
@@ -375,28 +384,6 @@
         .availability-hours li {
             margin-bottom: 10px;
             color: #666;
-        }
-
-        .contact-cta {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .contact-cta p {
-            margin-bottom: 15px;
-            color: #666;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-            }
-
-            .contact-info,
-            .contact-availability {
-                width: 100%;
-            }
         }
 
         .social-contact {
@@ -857,47 +844,70 @@
             }
         }
 
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #fff;
+            z-index: 1001;
+            position: relative;
+            margin-left: 10px;
+        }
+
         @media (max-width: 768px) {
             .menu-toggle {
-                display: block;
-                color: #fff;
+                display: inline-block;
+            }
+
+            /* Hide close button initially */
+            .menu-toggle.close {
+                display: none;
             }
 
             nav {
                 position: absolute;
-                margin-top: -1px;
                 top: 100%;
                 left: 0;
                 width: 100%;
+                margin-top: -1px;
                 background: var(--secondary-color);
                 padding: 10px 0;
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                transition: all 0.3s ease;
+                transition: clip-path 0.3s ease;
+                z-index: 1000;
             }
 
-            nav.active {
+            /* Open menu when targeted */
+            #menu:target {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            /* Show close button when menu is open */
+            #menu:target~.close {
+                display: inline-block;
+            }
+
+            /* Hide open button when menu is open */
+            #menu:target~.open {
+                display: none;
             }
 
             nav ul {
                 flex-direction: column;
                 align-items: flex-start;
-                /* Change from center to flex-start */
                 padding-left: 20px;
-                /* Add some padding to align with other content */
             }
 
             nav ul li {
                 margin: 10px 0;
                 width: 100%;
-                /* Make each li take full width */
             }
 
             nav ul li a {
                 display: block;
                 width: 100%;
                 padding: 8px 0;
-                /* Add some vertical padding */
+                color: white;
             }
 
             .header-container {
