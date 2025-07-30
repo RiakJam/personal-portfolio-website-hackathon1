@@ -844,12 +844,143 @@
             align-items: center;
         }
 
-        /* About section media queries */
+        /* ========== Global Responsive Styles ========== */
         @media (max-width: 1024px) {
-            #about {
+
+            #about,
+            #projects,
+            #services,
+            #contact {
                 padding: 70px 0;
             }
+        }
 
+        @media (max-width: 992px) {
+            .footer-col {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            #about,
+            #projects,
+            #services,
+            #contact {
+                padding: 60px 20px;
+            }
+
+            .header-container {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .menu-toggle {
+                display: inline-block;
+            }
+
+            .menu-toggle.close {
+                display: none;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                margin-top: -1px;
+                background: var(--secondary-color);
+                padding: 10px 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.3s ease;
+                z-index: 1000;
+            }
+
+            #menu:target {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            #menu:target~.close {
+                display: inline-block;
+            }
+
+            #menu:target~.open {
+                display: none;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 20px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+                width: 100%;
+            }
+
+            nav ul li a {
+                display: block;
+                width: 100%;
+                padding: 8px 0;
+                color: white;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-container,
+            .about-content {
+                flex-direction: column;
+            }
+
+            .contact-info,
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+                min-width: 100%;
+            }
+
+            .interest-card {
+                flex: 0 0 calc(50% - 15px);
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            #about,
+            #projects,
+            #services,
+            #contact {
+                padding: 50px 15px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .interest-card,
+            .footer-col {
+                flex: 0 0 100%;
+            }
+
+            .footer-col {
+                text-align: center;
+            }
+
+            .footer-col h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+
+        /* ========== About Section ========== */
+        @media (max-width: 1024px) {
             .about-content {
                 gap: 30px;
                 margin-top: 35px;
@@ -866,25 +997,10 @@
         }
 
         @media (max-width: 768px) {
-            #about {
-                padding: 60px 20px;
-                /* Added horizontal padding */
-            }
-
-            .about-content {
-                flex-direction: column;
-                gap: 30px;
-            }
-
             .about-image {
                 width: 140px;
                 height: 140px;
                 margin-bottom: 25px;
-            }
-
-            .about-text,
-            .skills {
-                min-width: 100%;
             }
 
             .about-text h3,
@@ -899,10 +1015,6 @@
         }
 
         @media (max-width: 480px) {
-            #about {
-                padding: 50px 15px;
-            }
-
             .about-image {
                 width: 120px;
                 height: 120px;
@@ -928,12 +1040,8 @@
             }
         }
 
-        /* Media queries for responsiveness */
+        /* ========== Projects Section ========== */
         @media (max-width: 1024px) {
-            #projects {
-                padding: 70px 0;
-            }
-
             .projects-grid {
                 gap: 25px;
                 margin-top: 35px;
@@ -945,10 +1053,6 @@
         }
 
         @media (max-width: 768px) {
-            #projects {
-                padding: 60px 20px;
-            }
-
             .projects-grid {
                 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                 gap: 20px;
@@ -964,10 +1068,6 @@
         }
 
         @media (max-width: 576px) {
-            #projects {
-                padding: 50px 15px;
-            }
-
             .projects-grid {
                 grid-template-columns: 1fr;
                 gap: 15px;
@@ -995,116 +1095,8 @@
             }
         }
 
-        @media (max-width: 768px) {
-            .contact-availability {
-                padding: 25px;
-                min-width: unset;
-                width: calc(100% - 40px);
-                margin: 0 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .contact-availability {
-                padding: 20px;
-                width: calc(100% - 30px);
-                margin: 0 15px;
-            }
-        }
-
-        @media (max-width: 992px) {
-            #contact {
-                padding: 70px 0;
-            }
-
-            .contact-container {
-                margin-top: 35px;
-                gap: 30px;
-            }
-
-            .contact-info {
-                padding-right: 30px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #contact {
-                padding: 60px 20px;
-            }
-
-            .contact-container {
-                flex-direction: column;
-                margin-top: 30px;
-            }
-
-            .contact-info {
-                padding-right: 0;
-                min-width: 100%;
-                margin-bottom: 30px;
-            }
-
-            .contact-info h3 {
-                margin-bottom: 15px;
-            }
-
-            .contact-info p {
-                margin-bottom: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            #contact {
-                padding: 50px 15px;
-            }
-
-            .contact-info ul li {
-                margin-bottom: 12px;
-                font-size: 0.95rem;
-            }
-
-            .contact-info ul li i {
-                margin-right: 8px;
-                font-size: 1.1rem;
-            }
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .contact-form {
-                padding: 0 15px;
-            }
-
-            .form-group input,
-            .form-group textarea {
-                padding: 10px;
-            }
-
-            .form-group textarea {
-                height: 120px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .contact-form {
-                padding: 0 12px;
-                min-width: 0;
-            }
-
-            .form-group {
-                margin-bottom: 15px;
-            }
-
-            .form-group textarea {
-                height: 100px;
-                min-height: 80px;
-            }
-        }
-
-        @media (max-width: 992px) {
-            #services {
-                padding: 60px 0;
-            }
-
+        /* ========== Services Section ========== */
+        @media (max-width: 1024px) {
             .services-container {
                 gap: 25px;
                 margin-top: 30px;
@@ -1116,11 +1108,6 @@
         }
 
         @media (max-width: 768px) {
-            #services {
-                padding: 50px 20px;
-                /* Added horizontal padding */
-            }
-
             .services-container {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 gap: 20px;
@@ -1142,10 +1129,6 @@
         }
 
         @media (max-width: 480px) {
-            #services {
-                padding: 40px 15px;
-            }
-
             .services-container {
                 grid-template-columns: 1fr;
                 gap: 15px;
@@ -1164,116 +1147,54 @@
             }
         }
 
-        @media (max-width: 992px) {
-            .footer-col {
-                flex: 0 0 50%;
+        /* ========== Contact Section ========== */
+        @media (max-width: 1024px) {
+            .contact-container {
+                margin-top: 35px;
+                gap: 30px;
+            }
+
+            .contact-info {
+                padding-right: 30px;
             }
         }
 
         @media (max-width: 768px) {
-            .menu-toggle {
-                display: inline-block;
+            .contact-info h3 {
+                margin-bottom: 15px;
             }
 
-            /* Hide close button initially */
-            .menu-toggle.close {
-                display: none;
+            .contact-info p {
+                margin-bottom: 20px;
             }
 
-            nav {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                margin-top: -1px;
-                background: var(--secondary-color);
-                padding: 10px 0;
-                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                transition: clip-path 0.3s ease;
-                z-index: 1000;
-            }
-
-            /* Open menu when targeted */
-            #menu:target {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            }
-
-            /* Show close button when menu is open */
-            #menu:target~.close {
-                display: inline-block;
-            }
-
-            /* Hide open button when menu is open */
-            #menu:target~.open {
-                display: none;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-                padding-left: 20px;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-                width: 100%;
-            }
-
-            nav ul li a {
-                display: block;
-                width: 100%;
-                padding: 8px 0;
-                color: white;
-            }
-
-            .header-container {
-                flex-direction: row;
-                text-align: left;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .about-text {
-                padding-right: 0;
-                margin-bottom: 40px;
-            }
-
-            .interest-card {
-                flex: 0 0 calc(50% - 15px);
-            }
-
-            .contact-container {
-                flex-direction: column;
-            }
-
-            .contact-info {
-                padding-right: 0;
-                margin-bottom: 40px;
+            .contact-availability {
+                padding: 25px;
+                min-width: unset;
+                width: calc(100% - 40px);
+                margin: 0 20px;
             }
         }
 
-        @media (max-width: 576px) {
-            .hero-content h1 {
-                font-size: 2rem;
+        @media (max-width: 480px) {
+            .contact-info ul li {
+                margin-bottom: 12px;
+                font-size: 0.95rem;
             }
 
-            .interest-card {
-                flex: 0 0 100%;
+            .contact-info ul li i {
+                margin-right: 8px;
+                font-size: 1.1rem;
             }
 
-            .footer-col {
-                flex: 0 0 100%;
-                text-align: center;
+            .contact-availability {
+                padding: 20px;
+                width: calc(100% - 30px);
+                margin: 0 15px;
             }
 
-            .footer-col h3::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            .social-links {
-                justify-content: center;
+            .form-group textarea {
+                height: 100px;
+                min-height: 80px;
             }
         }
