@@ -41,12 +41,12 @@ This is a professional portfolio website showcasing James Riak Samuel Yacobo's s
 
 ## File Structure
 ### Root Folder - portfolio
-###     - index.html - Main website content
-###     - assets/ - Contains all folders for static files and css
-###         - css/ - Stylesheets
-###         - images/ - Project screenshots and background image for hero section
-###     - icons/ - Various icons used
-###     - files/ - Downloadable documents (CV)
+- index.html - Main website content
+- assets/ - folders insite assets (css, images, icons and files)
+- css/ - Stylesheets (styles.css)
+- images/ - Project screenshots and background image for hero section
+- icons/ - Various icons used
+- files/ - Downloadable documents (CV)
 
 
 ### Section Breakdown
@@ -93,12 +93,6 @@ This is a professional portfolio website showcasing James Riak Samuel Yacobo's s
 
 ### Deployment
 Hosted on Vercel with automatic deployments from GitHub.
-
-### Future Enhancements
-1. JavaScript interactivity
-2. Dark mode toggle
-3. Project filtering
-4. Backend integration
 
 ### Contact
 **James Riak Samuel Yacobo**  
