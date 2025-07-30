@@ -2,19 +2,26 @@
 <html lang="en">
 
 <head>
+    <!-- Sets the character encoding for the document to UTF-8, supporting most characters and symbols -->
     <meta charset="UTF-8">
+
+    <!-- Ensures the webpage is responsive, scaling properly on all devices and screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking the page with external css file -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>James Riak's Portfolio Website</title>
+    <!-- Fetching and displaying Favicon  -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
 </head>
 
 <body>
-    <!-- Page Loader section begins-->
+    <!-- Page Loader section begins
+     This part is responsible for the loading on the landing page when a user visits the site
+     -->
     <div class="page-loader">
         <div class="loader-content">
             <div class="loader-spinner"></div>
@@ -24,11 +31,14 @@
     <!-- Page loader section ends -->
     <!-- Header begins-->
     <header>
-        <!-- Navigation section begins-->
+        <!-- Navigation section begins, -->
+        <!-- This section is the first section ever it's known as the menu bar -->
         <div class="container header-container">
             <div class="logo">RIAK'S <span>Portfolio</span></div>
             <nav id="menu">
                 <ul>
+                    <!-- I uses the # The site is single paged site. I uses the # to leads the user to 
+                     the right section when the link is clicked -->
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
@@ -73,6 +83,9 @@
                     <p>When I'm not coding, you can find me watching or playing football, reading history and politics.
                     </p>
                 </div>
+                <!-- Skill section
+                 The class (skill-progres and the percentage is responsible for showing the progress bar
+                 on the skill section) -->
                 <div class="skills">
                     <h3>My Skills</h3>
                     <div class="skill-item">
@@ -175,7 +188,7 @@
                 <h3>For more Information</h3>
                 <p class="degree">Download my cv below</p>
             </div>
-
+            <!-- The button that allows users to download my cv -->
             <div class="download-cv">
                 <a href="assets/files/James Riak CV.docx" class="btn">Download My CV</a>
             </div>
@@ -188,6 +201,10 @@
             <h2 class="section-title">My Interests</h2>
             <div class="interests-container">
                 <div class="interest-card">
+                    <!-- File directory/path explanation
+                     assets is a folder, icons is also a folder inside assets
+                     the .png/.jpg or any image format used as icons are on the icon folder, that 
+                     is why you see assets/icons/the image name.png -->
                     <img src="assets/icons/icons8-web-development-64.png" alt="Web Development Icon" class="icon-png">
                     <h3>Web Development</h3>
                     <p>Exploring modern frameworks and best practices to create responsive, accessible, and performant
@@ -417,7 +434,9 @@
                         <p>Prefer to schedule a call or meeting?</p>
                         <p><strong>Book via WhatsApp or Email</strong></p>
                     </div>
-
+                    <!-- This is a contact form it is not functional because there is no server side code 
+                     to send the message and the user details-->
+                    <!-- The action part is where the server side code is called eg, action="contact.php" -->
                     <form class="contact-form" action="#" method="POST">
                         <h4>Or send me a message directly:</h4>
 
@@ -494,14 +513,17 @@
                             City, Kenya
                         </li>
                         <li><img src="assets/icons/icons8-email-50.png" alt="Email" class="footer-icon"><a
-                                href="mailto:riakjms@gmail.com"> riakjms@gmail.com</a></li>
+                                href="mailto:riakjms@gmail.com"> Send an Email</a></li>
+                        <!-- 'mailto:' is a URI scheme used in an anchor tag to open the user's email client and start a new email -->
                         <li><img src="assets/icons/icons8-phone-call-48.png" alt="Phone" class="footer-icon"><a
-                                href="tel:254757876862"> +254 757 876 862</a></li>
+                                href="tel:254757876862"> Call Me</a></li>
+                        <!-- 'tel:' is a URI scheme used in an anchor tag to make a phone number clickable and initiate a call -->
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p> &copy; 2025 All Rights Reserved. | Designed and developed with ❤️ by James Riak Samuel Yacobo</p>
+                <!-- The &copy; is a html tag for © symbol -->
             </div>
         </div>
     </footer>
