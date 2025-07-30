@@ -29,7 +29,7 @@
 
 ## Project Structure
 ### index.html - Main website content
-### assets/ - Contains all static files
+### assets/ - Contains all folders for static files and css
 ### css/ - Stylesheets
 ### images/ - Project screenshots and background image for hero section
 ### icons/ - Various icons used
