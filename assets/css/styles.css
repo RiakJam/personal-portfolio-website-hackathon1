@@ -332,13 +332,33 @@
             flex: 1;
             min-width: 300px;
         }
-
         .contact-availability {
             flex: 1;
             min-width: 300px;
             background: var(--light-color);
             padding: 30px;
             border-radius: 8px;
+            margin: 0 auto;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-availability {
+                padding: 25px;
+                min-width: unset;
+                width: calc(100% - 40px);
+                margin: 0 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-availability {
+                padding: 20px;
+                width: calc(100% - 30px);
+                margin: 0 15px;
+            }
         }
 
         .contact-methods {
@@ -386,54 +406,6 @@
             color: #666;
         }
 
-        .social-contact {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 25px 0;
-        }
-
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 12px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            color: white;
-            font-weight: 500;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-
-        .social-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .social-btn i {
-            margin-right: 10px;
-            font-size: 1.2rem;
-        }
-
-        .whatsapp {
-            background-color: #25D366;
-        }
-
-        .instagram {
-            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-        }
-
-        .facebook {
-            background-color: #1877F2;
-        }
-
-        .twitter {
-            background-color: #344355;
-        }
-
         .contact-cta {
             margin-top: 30px;
             text-align: center;
@@ -450,17 +422,6 @@
         .contact-cta p:last-child {
             margin-bottom: 0;
             font-size: 1.1rem;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 576px) {
-            .social-contact {
-                flex-direction: column;
-            }
-
-            .social-btn {
-                justify-content: center;
-            }
         }
 
         /* Interests Section */
