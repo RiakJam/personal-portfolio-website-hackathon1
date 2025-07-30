@@ -48,7 +48,6 @@ This is a professional portfolio website showcasing James Riak Samuel Yacobo's s
 - icons/ - Various icons used
 - files/ - Downloadable documents (CV)
 
-
 ### Section Breakdown
 
 #### Header & Navigation
