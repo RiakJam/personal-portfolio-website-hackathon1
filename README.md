@@ -20,11 +20,7 @@
 
 ### Smooth scrolling navigation
 
-### Loading animation
-
-## CONTACT FORM
-### I didn't include contact form that has inout fields because the website don't have server side programming, that is why I use contact info
-### like whatsapp and the likes for user friendly. 
+### Loading animation 
 
 ## Technologies Used
 ### HTML5
