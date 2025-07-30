@@ -24,7 +24,7 @@
 
 ## Technologies Used
 ### HTML5
-### CSS3
+### CSS
 ### Vercel (for deployment)
 
 ## Project Structure
